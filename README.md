@@ -1,6 +1,6 @@
 # Front-End React Task
 
-This project is a front-end React assignment. It displays a list of posts with search functionality and a pop-up for full post details.
+This project is a front-end React assignment. It displays a list of posts with search functionality, a pop-up for full post details, and a responsive menu with both desktop and mobile behavior.
 
 ## Prerequisites
 
