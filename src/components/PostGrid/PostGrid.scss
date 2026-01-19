@@ -1,0 +1,35 @@
+.post-grid {
+  padding: 3rem 0; // 3rem gap from menu as per requirements
+  margin-bottom: var(--spacing-2xl);
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; // px-based gap between columns as per requirements
+  }
+
+  &__item {
+    // Desktop: 3 columns
+    flex: 0 0 calc(33.333% - 14px);
+    
+    @media (max-width: 1024px) and (min-width: 768px) {
+      // Tablet: 2 columns
+      flex: 0 0 calc(50% - 10px);
+    }
+
+    @media (max-width: 767px) {
+      // Mobile: 1 column
+      flex: 0 0 100%;
+    }
+  }
+
+  &__empty {
+    text-align: center;
+    padding: var(--spacing-3xl) var(--spacing-md);
+
+    p {
+      font-size: var(--font-size-lg);
+      color: var(--color-text-light);
+    }
+  }
+}
